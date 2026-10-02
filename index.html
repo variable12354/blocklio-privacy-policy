@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blocklio - Privacy Policy & Terms of Service</title>
+  <meta name="description" content="Privacy Policy and Terms and Conditions for Blocklio mobile puzzle game.">
+  <style>
+    :root {
+      --primary: #6366F1;
+      --primary-hover: #4F46E5;
+      --bg-gradient: linear-gradient(135deg, #0F172A 0%, #1E1B4B 50%, #0F172A 100%);
+      --card-bg: rgba(30, 41, 59, 0.7);
+      --card-border: rgba(255, 255, 255, 0.1);
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --accent: #F59E0B;
+      --code-bg: rgba(15, 23, 42, 0.8);
+      --table-border: rgba(255, 255, 255, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg-gradient);
+      background-attachment: fixed;
+      color: var(--text-main);
+      line-height: 1.65;
+      min-height: 100vh;
+      padding: 24px 16px 60px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 40px 20px 30px;
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(99, 102, 241, 0.15);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      padding: 8px 18px;
+      border-radius: 9999px;
+      margin-bottom: 16px;
+    }
+
+    .app-icon {
+      width: 28px;
+      height: 28px;
+      background: linear-gradient(135deg, #6366F1, #EC4899);
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 16px;
+      color: white;
+    }
+
+    .app-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #C7D2FE;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 800;
+      background: linear-gradient(to right, #FFFFFF, #CBD5E1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+
+    .app-meta {
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    .app-meta span {
+      margin: 0 8px;
+      opacity: 0.5;
+    }
+
+    /* Navigation Tabs */
+    .tabs-nav {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin: 28px 0;
+    }
+
+    .tab-btn {
+      background: rgba(30, 41, 59, 0.6);
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      padding: 12px 24px;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .tab-btn:hover {
+      color: var(--text-main);
+      border-color: rgba(99, 102, 241, 0.5);
+      transform: translateY(-1px);
+    }
+
+    .tab-btn.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+      box-shadow: 0 4px 20px rgba(99, 102, 241, 0.35);
+    }
+
+    /* Content Card */
+    .content-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: 20px;
+      padding: clamp(24px, 5vw, 48px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Typography inside content */
+    h2 {
+      font-size: 22px;
+      color: #FFFFFF;
+      margin: 36px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--table-border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
+    }
+
+    h3 {
+      font-size: 17px;
+      color: #E2E8F0;
+      margin: 22px 0 10px;
+    }
+
+    p {
+      color: #CBD5E1;
+      margin-bottom: 16px;
+      font-size: 15px;
+    }
+
+    ul, ol {
+      margin-left: 20px;
+      margin-bottom: 20px;
+      color: #CBD5E1;
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    strong {
+      color: #FFFFFF;
+    }
+
+    a {
+      color: #818CF8;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: #A5B4FC;
+    }
+
+    /* Highlight Banner */
+    .notice-box {
+      background: rgba(99, 102, 241, 0.1);
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 0 12px 12px 0;
+      margin: 20px 0;
+      font-size: 14px;
+      color: #C7D2FE;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+
+    th, td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--table-border);
+    }
+
+    th {
+      background: rgba(15, 23, 42, 0.5);
+      color: #E2E8F0;
+      font-weight: 600;
+    }
+
+    td {
+      color: #CBD5E1;
+    }
+
+    code {
+      background: var(--code-bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 13px;
+      color: #F472B6;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 40px 20px 20px;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+
+    .footer-links {
+      margin-bottom: 12px;
+    }
+
+    .footer-links a {
+      margin: 0 10px;
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: var(--text-main);
+    }
+
+    @media (max-width: 640px) {
+      .tabs-nav {
+        flex-direction: column;
+      }
+      .tab-btn {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="app-badge">
+        <div class="app-icon">B</div>
+        <span class="app-title">Blocklio Official Legal Center</span>
+      </div>
+      <h1>Legal & Policy Center</h1>
+      <p class="app-meta">
+        <strong>App:</strong> Blocklio
+        <span>•</span>
+        <strong>Package:</strong> <code>com.variable.blocklio</code>
+        <span>•</span>
+        <strong>Effective Date:</strong> October 2, 2026
+      </p>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="tabs-nav">
+      <button class="tab-btn active" id="tab-privacy" onclick="switchTab('privacy')">Privacy Policy</button>
+      <button class="tab-btn" id="tab-terms" onclick="switchTab('terms')">Terms and Conditions</button>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="content-card">
+
+      <!-- ==================== PRIVACY POLICY ==================== -->
+      <section id="content-privacy" class="tab-content active">
+        <h2>Privacy Policy</h2>
+        <div class="notice-box">
+          <strong>Summary:</strong> Blocklio is a casual puzzle game designed with player privacy in mind. We do not require accounts, we do not collect personal identifiers (such as your name, email, or contacts), and all game saves, coins, and booster balances are stored locally on your device. Standard anonymous diagnostics and advertising SDKs (Google AdMob and Google Firebase) are utilized to operate the game.
+        </div>
+
+        <h2>1. Information We Do NOT Collect</h2>
+        <p>We respect your personal privacy:</p>
+        <ul>
+          <li><strong>No Accounts or Registration:</strong> You can download and enjoy Blocklio immediately without creating an account or logging in.</li>
+          <li><strong>No Direct Personal Information:</strong> We do not ask for, harvest, or store your name, physical address, email, phone number, contacts, microphone, camera, or precise GPS location.</li>
+          <li><strong>No Financial or Credit Card Data:</strong> All In-App Purchases (e.g. coin bundles, theme passes, ad removal) are securely processed through Google Play. We never receive or store your payment details.</li>
+        </ul>
+
+        <h2>2. Data Stored Locally on Your Device</h2>
+        <p>Blocklio stores gameplay progress directly on your device using secure local storage (<code>AsyncStorage</code>). This data stays on your device:</p>
+        <ul>
+          <li><strong>Progress & Records:</strong> Levels completed, high scores, adventure mode stars, and daily challenge milestones.</li>
+          <li><strong>Virtual Inventory:</strong> In-game coin balance, booster inventories (Undo, Hammer, Shuffle, Wild Piece), and unlocked themes.</li>
+          <li><strong>Player Preferences:</strong> Sound effect volume, music toggle, haptic vibration preferences, and active block theme.</li>
+        </ul>
+        <p><em>Notice: Uninstalling the application or wiping app storage in device settings may permanently reset your local game save and coin balance.</em></p>
+
+        <h2>3. Third-Party Services & Automated Telemetry</h2>
+        <p>To keep Blocklio free, reliable, and properly balanced, we integrate standard, verified SDKs from Google:</p>
+
+        <h3>3.1 Google Mobile Ads (AdMob)</h3>
+        <p>We use Google AdMob to display banner ads, interstitial transitions between levels, and voluntary rewarded video ads (e.g. watching an ad to earn extra coins or revive a game).</p>
+        <ul>
+          <li><strong>Data Processed:</strong> Android Advertising ID (AAID), IP address (for coarse geographic location and fraud protection), device model, carrier, screen dimensions, and ad interaction metrics.</li>
+          <li><strong>Purpose:</strong> Serving ads, preventing fraudulent impressions, and providing opt-in rewards.</li>
+          <li><strong>Opt-Out:</strong> You can reset or delete your advertising identifier at any time via Android <code>Settings &gt; Google &gt; Ads</code>.</li>
+          <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> &bull; <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Advertising Technologies</a></li>
+        </ul>
+
+        <h3>3.2 Google Analytics for Firebase</h3>
+        <p>Used to monitor anonymous game events (such as levels completed, combo streaks, and session lengths) to improve difficulty balance and fix progression bottlenecks.</p>
+        <ul>
+          <li><strong>Data Processed:</strong> Anonymous gameplay events, app instance IDs, device model, OS version, country code, and session duration.</li>
+          <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy & Security</a></li>
+        </ul>
+
+        <h3>3.3 Firebase Crashlytics</h3>
+        <p>Used to immediately detect and diagnose crashes so we can release fast stability updates.</p>
+        <ul>
+          <li><strong>Data Processed:</strong> Crash stack traces, memory usage at time of crash, device model, and OS version. No personally identifiable data is included.</li>
+          <li><a href="https://firebase.google.com/terms/crashlytics" target="_blank" rel="noopener">Firebase Crashlytics Terms</a></li>
+        </ul>
+
+        <h3>3.4 Firebase Remote Config & Play Integrity</h3>
+        <p>Used for remote game configuration, checking for important game updates, and validating software integrity to protect against cheating.</p>
+
+        <h2>4. Android Device Permissions</h2>
+        <p>Blocklio requests only minimal permissions strictly needed for operation:</p>
+        <ul>
+          <li><code>android.permission.INTERNET</code>: Required for ads, crash reports, remote configuration, and analytics.</li>
+          <li><code>android.permission.VIBRATE</code>: Triggers haptic feedback vibration when placing blocks and making line clears (can be toggled off inside game Settings).</li>
+        </ul>
+
+        <h2>5. Children's Privacy (COPPA & GDPR-K)</h2>
+        <p>Blocklio is designed as a family-friendly casual puzzle game. We do not knowingly collect personal identifiable information from children under 13 (or under 16 in the European Union). The app does not contain chat rooms, public profiles, or social media integration. If you are a parent or guardian and believe your child has submitted personal information, please contact us immediately so we can remove it.</p>
+
+        <h2>6. International Privacy Rights (GDPR & CCPA/CPRA)</h2>
+        <p><strong>EEA / UK Users (GDPR):</strong> We process data based on your consent (for personalized advertisements where applicable) and legitimate interest (app security, crash diagnostics, and anti-fraud). You have the right to request access, rectification, or deletion of data, which can also be accomplished by clearing app storage or deleting your Advertising ID.</p>
+        <p><strong>California Residents (CCPA/CPRA):</strong> We do not sell personal information for financial payment. Sharing pseudonymous advertising IDs with advertising partners may be classified as "sharing" under California law. You can opt out of interest-based ads via your device's Google Ads settings.</p>
+
+        <h2>7. Data Retention & Security</h2>
+        <p>All communication with Google Firebase and AdMob is encrypted in transit using industry-standard TLS/HTTPS protocols. Anonymous telemetry is retained in accordance with standard Google Cloud retention schedules (2 to 14 months) before automatic deletion.</p>
+
+        <h2>8. Contact Information</h2>
+        <p>If you have any questions or inquiries about this Privacy Policy, please reach out to:</p>
+        <ul>
+          <li><strong>Developer / Publisher:</strong> [Developer / Studio Name, e.g., Variable]</li>
+          <li><strong>Support Email:</strong> <a href="mailto:support@yourdomain.com">[Your Contact Email, e.g., support@yourdomain.com]</a></li>
+          <li><strong>App Package:</strong> <code>com.variable.blocklio</code></li>
+        </ul>
+      </section>
+
+      <!-- ==================== TERMS AND CONDITIONS ==================== -->
+      <section id="content-terms" class="tab-content">
+        <h2>Terms and Conditions</h2>
+        <div class="notice-box">
+          <strong>Summary:</strong> By downloading or playing Blocklio, you agree to these Terms. Blocklio is provided for personal entertainment. In-game items and coins are virtual licenses with no real-world monetary value.
+        </div>
+
+        <h2>1. Acceptance of Agreement</h2>
+        <p>These Terms and Conditions ("Terms") constitute a legally binding agreement between you ("User", "Player") and <strong>[Developer / Studio Name, e.g., Variable]</strong> ("Developer", "we", "us"). By installing, accessing, or playing Blocklio (Application ID: <code>com.variable.blocklio</code>), you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy.</p>
+
+        <h2>2. Limited Entertainment License</h2>
+        <p>We grant you a personal, non-exclusive, non-transferable, revocable license to download and play Blocklio on your personal mobile devices for non-commercial entertainment purposes. You agree not to:</p>
+        <ul>
+          <li>Decompile, reverse engineer, disassemble, or attempt to extract source code from the App.</li>
+          <li>Exploit cheats, automation bots, memory editors, or hacks to manipulate scores or virtual currency.</li>
+          <li>Circumvent or tamper with security, licensing, or anti-fraud protections.</li>
+          <li>Redistribute, sublicense, rent, or lease the App to third parties.</li>
+        </ul>
+
+        <h2>3. Intellectual Property Rights</h2>
+        <p>All rights, titles, and interests in Blocklio—including source code, game mechanics, visual assets, artwork, animations, sounds, music, themes, and branding—are the proprietary property of the Developer and protected under intellectual property laws. You acquire no ownership rights whatsoever.</p>
+
+        <h2>4. Virtual Items & In-App Purchases (IAP)</h2>
+        <h3>4.1 Nature of Virtual Goods</h3>
+        <p>Blocklio may offer virtual coins, boosters (Undo, Hammer, Shuffle, Wild Piece), and block themes. All virtual items are licensed, not sold. They possess <strong>no real-world monetary value</strong>, cannot be redeemed for fiat currency, and are non-transferable.</p>
+
+        <h3>4.2 In-App Purchases & Refunds</h3>
+        <p>All in-app purchases are billed and handled exclusively through <strong>Google Play</strong>. Prices and availability are subject to change. Refunds are handled in accordance with <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play's official refund policies</a>.</p>
+
+        <h3>4.3 Local Storage Notice</h3>
+        <p>Game progression, coin balances, and booster counts are stored locally on your device (via <code>AsyncStorage</code>). Uninstalling the application, clearing device data, or factory resetting your device may permanently erase your virtual balances. The Developer is not responsible for restoring lost local balances caused by uninstallation.</p>
+
+        <h2>5. Advertisements & Third-Party Content</h2>
+        <p>Blocklio displays third-party advertisements via Google AdMob (including banner ads, interstitial level transitions, and voluntary rewarded video ads). We do not control or endorse the products or services advertised by third parties. Players who purchase the "Remove Ads" option will enjoy an ad-free experience, excluding voluntary rewarded ads that players specifically choose to watch for extra coins or revives.</p>
+
+        <h2>6. Disclaimer of Warranties</h2>
+        <p>BLOCKLIO IS PROVIDED ON AN <strong>"AS IS"</strong> AND <strong>"AS AVAILABLE"</strong> BASIS WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED. WE DO NOT GUARANTEE THAT THE APP WILL BE UNINTERRUPTED, COMPLETELY ERROR-FREE, OR COMPATIBLE WITH EVERY HARDWARE CONFIGURATION.</p>
+
+        <h2>7. Limitation of Liability</h2>
+        <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL THE DEVELOPER BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES (INCLUDING LOSS OF GAME PROGRESS OR DEVICE DAMAGE) ARISING OUT OF YOUR USE OF THE APP. OUR TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNT PAID BY YOU THROUGH IN-APP PURCHASES IN THE PRECEDING TWELVE (12) MONTHS OR $50.00 USD, WHICHEVER IS LESS.</p>
+
+        <h2>8. Governing Law & Dispute Resolution</h2>
+        <p>These Terms shall be governed by and interpreted under the laws of <strong>[Your Country / State, e.g., India / United States]</strong>. Any dispute shall first be addressed informally by contacting support. If unresolved within 30 days, disputes will be submitted to the competent courts of <strong>[Your City / Jurisdiction]</strong>.</p>
+
+        <h2>9. Contact Us</h2>
+        <p>For questions or support regarding these Terms and Conditions, please contact:</p>
+        <ul>
+          <li><strong>Developer / Publisher:</strong> [Developer / Studio Name, e.g., Variable]</li>
+          <li><strong>Email:</strong> <a href="mailto:support@yourdomain.com">[Your Contact Email, e.g., support@yourdomain.com]</a></li>
+          <li><strong>App Package:</strong> <code>com.variable.blocklio</code></li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <a href="#privacy" onclick="switchTab('privacy')">Privacy Policy</a> &bull;
+        <a href="#terms" onclick="switchTab('terms')">Terms and Conditions</a>
+      </div>
+      <p>&copy; 2026 [Developer / Studio Name, e.g., Variable]. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    function switchTab(tab) {
+      const isPrivacy = tab === 'privacy';
+      
+      document.getElementById('content-privacy').classList.toggle('active', isPrivacy);
+      document.getElementById('content-terms').classList.toggle('active', !isPrivacy);
+      
+      document.getElementById('tab-privacy').classList.toggle('active', isPrivacy);
+      document.getElementById('tab-terms').classList.toggle('active', !isPrivacy);
+      
+      window.location.hash = isPrivacy ? 'privacy' : 'terms';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Handle hash on initial page load
+    window.addEventListener('DOMContentLoaded', () => {
+      const hash = window.location.hash.toLowerCase();
+      if (hash === '#terms' || hash === '#terms-and-conditions') {
+        switchTab('terms');
+      } else {
+        switchTab('privacy');
+      }
+    });
+  </script>
+</body>
+</html>
